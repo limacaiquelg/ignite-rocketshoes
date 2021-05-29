@@ -47,7 +47,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
           const newCart = [...cart, newItem];
 
-          setCart(newCart); // Entender por que o setCart NÃO FUNCIONA!
+          setCart(newCart);
 
           localStorage.setItem('@RocketShoes:cart', JSON.stringify(newCart));
         } else {
@@ -75,7 +75,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       }
 
       const newCart = cart.filter(item => item.id !== productId);
-      setCart(newCart); // Entender por que o setCart NÃO FUNCIONA!
+      setCart(newCart);
       localStorage.setItem('@RocketShoes:cart', JSON.stringify(newCart));
     } catch {
       toast.error('Erro na remoção do produto');
