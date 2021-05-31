@@ -20,3 +20,4 @@ Este desafio teve como objetivo o desenvolvimento da funcionalidade de carrinho 
 - Context API
 - Local Storage API
 - Criação de novos hooks
+- Notificações com a biblioteca [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
